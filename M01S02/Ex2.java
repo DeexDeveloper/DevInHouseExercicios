@@ -21,6 +21,15 @@ public class Ex2 {
             {8, 9, 10, 7.5},
             {9, 9.5, 10, 8}
         };
-
+        float somaNotas = 0;        
+        for (int n = 0; n<notas.length; n++) {
+            for (int t = 0; t<notas.length; t++) {
+                somaNotas+=notas[n][t];
+            }
+        
+        }
+        System.out.println(notas[2][0]);
+        System.out.println(notas[3][1]);
+        System.out.println(somaNotas);
     }
 }
