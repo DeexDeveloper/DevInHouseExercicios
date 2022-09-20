@@ -1,3 +1,4 @@
+package M01S01;
 /*
 Escreva um programa em Java que pergunte ao usuário via linha de comando qual o ano de seu nascimento.
 Com base no ano informado, imprima no console a idade calculada deste usuário.

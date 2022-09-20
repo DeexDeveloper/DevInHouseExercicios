@@ -1,3 +1,4 @@
+package M01S01;
 /*
 O sistema de pontuação por partida no Campeonato Brasileiro de Futebol funciona assim:
 	Vitória = 3 pontos

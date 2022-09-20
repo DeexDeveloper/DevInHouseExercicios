@@ -1,3 +1,4 @@
+package M01S01;
 
 /*
 Informe o resultado que será impresso após a avaliação da expressão aritmética abaixo:

@@ -1,3 +1,4 @@
+package M01S01;
 
 /*
 Implemente em Java um código para calcular e imprimir no console a área de um triângulo de base 12 cm, e altura de 8 cm,

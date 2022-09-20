@@ -1,3 +1,4 @@
+package M01S01;
 /*
 Escreva um programa em Java que pergunte ao usuário via linha de comando qual seu herói favorito.
 Atribua a resposta em uma variável.
