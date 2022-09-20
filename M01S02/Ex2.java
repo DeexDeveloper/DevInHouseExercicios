@@ -26,7 +26,6 @@ public class Ex2 {
             for (int t = 0; t<notas.length; t++) {
                 somaNotas+=notas[n][t];
             }
-        
         }
         System.out.println(notas[2][0]);
         System.out.println(notas[3][1]);
