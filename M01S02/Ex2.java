@@ -23,7 +23,7 @@ public class Ex2 {
         };
         float somaNotas = 0;        
         for (int n = 0; n<notas.length; n++) {
-            for (int t = 0; t<notas.length; t++) {
+            for (int t = 0; t<notas[n].length; t++) {
                 somaNotas+=notas[n][t];
             }
         }
