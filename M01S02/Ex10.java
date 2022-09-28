@@ -14,7 +14,7 @@ public class Ex10 {
         System.out.print("Digite a palavra para saber se é palímdrome: ");
         Scanner scan = new Scanner(System.in);
         String palindrome = scan.nextLine();
-      
+        System.out.println(palindrome);
         scan.close();
     }    
 }
