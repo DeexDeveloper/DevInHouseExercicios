@@ -9,12 +9,29 @@ package M01S02;
 
 import java.util.Scanner;
 
+import javax.swing.text.PlainDocument;
+
 public class Ex10 {
     public static void main(String[] args) {
         System.out.print("Digite a palavra para saber se é palímdrome: ");
         Scanner scan = new Scanner(System.in);
-        String palindrome = scan.nextLine();
-        System.out.println(palindrome);
+        String palavra = scan.nextLine();
+        int b = palavra.length()-1;
+        Boolean palindrome = false;
+        for (int i =0; i<palavra.length(); i++){
+            if (palavra.charAt(b)!=palavra.charAt(i)){
+                palindrome = false;
+                break;
+            } else {
+                palindrome = true;
+            }
+            b--;
+        }
+        if (palindrome){
+            System.out.println("É um palindrome!");
+        } else{
+            System.out.println("Não é um palindrome!");
+        }
         scan.close();
     }    
 }
