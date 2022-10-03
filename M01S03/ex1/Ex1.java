@@ -8,6 +8,9 @@ package M01S03.ex1;
 public class Ex1 {
     public static void main(String[] args) {
         System.out.println("olá");
-        String nome = getNome()
+        Funcionario pedro;
+        pedro.setSalario(1000);;
+        pedro.Promover(0.5)
+        System.out.println(pedro.getSalario());
     }    
 }

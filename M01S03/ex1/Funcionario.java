@@ -1,6 +1,8 @@
 package M01S03.ex1;
 
-public class Funcionario {
+import javax.sound.sampled.FloatControl;
+
+public class Funcionario  {
     private Long cpf;
     private Float salario;
     private String nome;
@@ -22,4 +24,7 @@ public class Funcionario {
     public void setNome(String nome) {
         this.nome = nome;
     }   
+}
+public class Promover (Float){
+    this.salario = this.salario*(1*Promover);
 }
