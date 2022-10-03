@@ -7,10 +7,13 @@ package M01S03.ex1;
 
 public class Ex1 {
     public static void main(String[] args) {
-        System.out.println("olá");
-        Funcionario pedro;
-        pedro.setSalario(1000);;
-        pedro.Promover(0.5)
-        System.out.println(pedro.getSalario());
+        Funcionario funcionario = new Funcionario();
+        funcionario.setNome("Deex Develper");
+        funcionario.setCpf(1234567891);
+        funcionario.setSalario(12000);
+        Integer aumento = funcionario.promover(30);
+        System.out.println(aumento);
+
+        
     }    
 }
