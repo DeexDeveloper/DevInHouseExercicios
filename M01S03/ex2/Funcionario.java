@@ -5,11 +5,9 @@ c) Implemente outro construtor que receba como argumentos nome e salário e inic
 d) Implemente um método público 'aumentar' que recebe como parâmetro um valor (Float). Na implementação, some este valor ao 'salário'.
 e) Implemente outro método público 'aumentar' que recebe como parâmetros um valor (Float) e uma commissão (Float). Na implementação, 
 some ambos os valores ao 'salário'.
-*/
-package M01S03.ex2;
+*/package M01S03.ex2;
 
-public class Ex2 {
-    public static void main(String[] args) {
-        
-    }    
+public class Funcionario {
+    String nome;
+    Float salario;
 }
