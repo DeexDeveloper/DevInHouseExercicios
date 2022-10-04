@@ -10,4 +10,11 @@ some ambos os valores ao 'salário'.
 public class Funcionario {
     String nome;
     Float salario;
+    public Funcionario(String nome) {
+        this.nome = nome;
+    }
+    public Funcionario(String nome, Float salario) {
+        this.nome = nome;
+        this.salario = salario;
+    }
 }
