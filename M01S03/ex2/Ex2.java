@@ -10,6 +10,9 @@ package M01S03.ex2;
 
 public class Ex2 {
     public static void main(String[] args) {
-        
+        Funcionario funcionario = new Funcionario("Ronaldo");
+        Funcionario funcionario2 = new Funcionario("Ronaldinh", 500f);
+        funcionario2.Aumentar(200f,566f);
+        System.out.println(funcionario2.getSalario());
     }    
 }
