@@ -9,11 +9,11 @@ Dicas:
 */
 package M01S03.ex4;
 
-public class Ex4 {
-    public static void main(String[] args) {
-        String teste = "isso é um teste para testar o teste";
-        Contador2 umTeste = new Contador2();
-        System.out.println(umTeste.contarPalavras(teste));
-        ;
+public class Contador2 {
+    private String frase;
+    public String contarPalavras (String palavra){
+        String contPalavra[] = palavra.split(" ");
+        Integer num = contPalavra.length;
+        return num.toString();
     }
 }
