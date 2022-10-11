@@ -41,9 +41,10 @@ public class Principal {
         List<Concurso> concursos = carregarConcursos(lista);
         MegaSena megasena = new MegaSena(concursos);
         //megasena.imprimir();//ex5
-        megasena.imprimirOrdem();
-
-
+        //megasena.imprimirOrdem();//ex6
+        //megasena.imprimirOrdemConcurso();//ex7
+        //megasena.verificarSeTeveSorteio();//ex8
+        megasena.verificarNumeros();
     }
 
     private static List<String> lerDoArquivo() throws IOException {
