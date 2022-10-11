@@ -19,7 +19,7 @@ _Dicas_:
 - Como é um arquivo csv, usar o método split() para separar os itens, e depois instanciar um objeto concurso para cada linha do arquivo, carregando os atributos com os valores.
 - Para imprimir os itens de um array, pode-se usar o método utilitário 'Arrays.toString()'.
 */
-package M01S03.ex5;
+package M01S03.megasena;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,16 +28,31 @@ import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class Ex5 {
+public class Principal {
     /**
      * @param args
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
+        List<String> lista = lerDoArquivo();
+        List<Concurso> concursos = carregarConcursos(lista);
+        MegaSena megasena = new MegaSena(concursos);
+        //megasena.imprimir();//ex5
+        megasena.imprimirOrdem();
+
+
+    }
+
+    private static List<String> lerDoArquivo() throws IOException {
         Path arquivo = Paths.get("megasena.txt");
         List<String> lista = Files.readAllLines(arquivo);
+        return lista;
+    }
+
+    private static List<Concurso> carregarConcursos(List<String> lista) {
         List<Concurso> concursos = new ArrayList<>();
         DateTimeFormatter formatador =  DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
@@ -54,8 +69,6 @@ public class Ex5 {
             concursos.add(concurso);
 
         }
-        for (Concurso imprimir :concursos){
-            System.out.println(imprimir);
-        }              
+        return concursos;
     }
 }
