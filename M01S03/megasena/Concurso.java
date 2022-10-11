@@ -1,7 +1,10 @@
-package M01S03.ex5;
+package M01S03.megasena;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Concurso {
     
@@ -15,6 +18,15 @@ public class Concurso {
         this.numero = numero;
         this.data = data;
         this.sorteados = sorteados;
+    }
+
+    public String formatarNumSorteados(){
+        List<Integer> listaSorteados = new ArrayList<>();
+        for (int nro : sorteados){
+            listaSorteados.add(nro);
+        }
+        Collections.sort(listaSorteados);
+        return "Concurso [numero=" + numero + ", data=" + data + ", sorteados=" + listaSorteados + "]";
     }
 
     @Override
