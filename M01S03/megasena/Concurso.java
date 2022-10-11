@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Concurso {
+public class Concurso implements Comparable<Concurso>{
     
     private Integer numero;
     private LocalDate data;
@@ -21,12 +21,14 @@ public class Concurso {
     }
 
     public String formatarNumSorteados(){
-        List<Integer> listaSorteados = new ArrayList<>();
-        for (int nro : sorteados){
-            listaSorteados.add(nro);
-        }
-        Collections.sort(listaSorteados);
+        List<Integer> listaSorteados = ConverterArrayParaLista.converterOrdenado(sorteados);
         return "Concurso [numero=" + numero + ", data=" + data + ", sorteados=" + listaSorteados + "]";
+    }
+
+    @Override
+    public int compareTo(Concurso o) {
+        // TODO Auto-generated method stub
+        return this.numero.compareTo(o.numero);
     }
 
     @Override
@@ -51,5 +53,7 @@ public class Concurso {
     public void setSorteados(int[] sorteados) {
         this.sorteados = sorteados;
     }
+
+
     
 }
