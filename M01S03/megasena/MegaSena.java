@@ -72,7 +72,7 @@ public class MegaSena {
             List<Integer> numOrd = ConverterArrayParaLista.converterOrdenado(concurso.getSorteados());
             if(numOrd.toString().equals(listaNumeros.toString())){
                 ehIgual = true;
-                Integer bo = concurso.getNumero();
+                
                 break;
             }
         }
